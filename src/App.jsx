@@ -1,3 +1,5 @@
+import NewProject from "./component/NewProject";
+import NoProjectSelected from "./component/NoProjectSelected";
 import Sidebar from "./component/Sidebar";
 
 let projects = [
@@ -15,10 +17,11 @@ let projects = [
 
 function App() {
   return (
-    <>
-      <h1 className="my-8 text-center text-5xl font-bold">Hello World</h1>
+    <main className="h-screen my-8 flex gap-8">
       <Sidebar projects={projects} />
-    </>
+      {/* <NewProject /> */}
+      <NoProjectSelected />
+    </main>
   );
 }
 
